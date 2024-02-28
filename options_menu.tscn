@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dfdulaveos31"]
+[gd_scene load_steps=3 format=3 uid="uid://dfdulaveos31"]
 
 [ext_resource type="Script" path="res://options_menu.gd" id="1_ix1xj"]
+[ext_resource type="Texture2D" uid="uid://8qqfh6x757eg" path="res://Fjs_-_Discord_23-9-2022_23_40_35.png" id="2_exgyx"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -11,6 +12,12 @@ offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ix1xj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1160.0
+offset_bottom = 656.0
+texture = ExtResource("2_exgyx")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
