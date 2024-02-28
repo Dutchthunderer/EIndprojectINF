@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bg6xvhy5fjekl"]
+[gd_scene load_steps=4 format=3 uid="uid://bg6xvhy5fjekl"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_uakya"]
-[ext_resource type="Texture2D" uid="uid://dg8eoa3h856pw" path="res://tar.png" id="2_gea2e"]
+[ext_resource type="Texture2D" uid="uid://l02vl08guoa1" path="res://tar.png" id="2_gea2e"]
+[ext_resource type="AudioStream" uid="uid://cbd85w5gjfa6f" path="res://Fotos & geluid/y2mate.com - Tame Impala The Less I Know The Better Audio.mp3" id="3_5423i"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -11,6 +12,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uakya")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_5423i")
+autoplay = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
@@ -30,6 +35,7 @@ scale = Vector2(2.19186, 1.88154)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_stretch_ratio = 0.0
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
