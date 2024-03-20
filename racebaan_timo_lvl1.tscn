@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b13n2qfcbcf6i"]
+
+[ext_resource type="ArrayMesh" uid="uid://konpagaktrk0" path="res://AC-CIRCUITtextured.obj" id="1_xn168"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Ac-circuiTtextured" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -233.025, -3.90705, -66.8868)
+mesh = ExtResource("1_xn168")
