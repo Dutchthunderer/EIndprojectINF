@@ -1,0 +1,14 @@
+{
+  "name": "Your First Circuit",
+  "description": "This is your first AC track.",
+  "tags": [
+    "test",
+  ],
+  "geotags": [
+  ],
+  "country": "Your Country",
+  "pitboxes": "1",
+  "year": 2022,
+  "author": "Your Name",
+  "version": "1.0",
+}
