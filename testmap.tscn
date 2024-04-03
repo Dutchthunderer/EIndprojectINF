@@ -26,6 +26,9 @@ glow_enabled = true
 
 [node name="Main" type="Node3D"]
 
+[node name="AC-CIRCUITwerkplease" parent="." instance=ExtResource("2_hodom")]
+transform = Transform3D(0.0950118, 0, 0.995476, 0, 1, 0, -0.995476, 0, 0.0950118, 1.56507, 0, -5.02145)
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_8dxyn")
 
@@ -40,6 +43,3 @@ linear_velocity = Vector3(0, 0, 2)
 engine_force_value = 200
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-
-[node name="AC-CIRCUITwerkplease" parent="." instance=ExtResource("2_hodom")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56507, 0, -5.02145)
