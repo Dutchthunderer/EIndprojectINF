@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://wmbgkexjtpx8"]
 
 [ext_resource type="PackedScene" uid="uid://ci52bv1m15cbs" path="res://cars/Doge.tscn" id="1_0rw6s"]
-[ext_resource type="PackedScene" uid="uid://do0fifisci8d0" path="res://AC-CIRCUITwerkplease.dae" id="2_hodom"]
+[ext_resource type="PackedScene" uid="uid://n68kpc0gq0pw" path="res://AC-CIRCUITwerkplease-col.dae" id="2_6jehh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_b7tlo"]
 sky_top_color = Color(0.419608, 0.54902, 0.619608, 1)
@@ -26,20 +26,18 @@ glow_enabled = true
 
 [node name="Main" type="Node3D"]
 
-[node name="AC-CIRCUITwerkplease" parent="." instance=ExtResource("2_hodom")]
-transform = Transform3D(0.0950118, 0, 0.995476, 0, 1, 0, -0.995476, 0, 0.0950118, 1.56507, 0, -5.02145)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_8dxyn")
+
+[node name="car" parent="WorldEnvironment" instance=ExtResource("1_0rw6s")]
+transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, -0.564415, 0.184314, -6.30866)
+linear_velocity = Vector3(0, 0, 2)
+
+[node name="root" parent="WorldEnvironment" instance=ExtResource("2_6jehh")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.80696, 0.183487, -0.56138, 0, 0.950516, 0.310676, 0.590606, -0.250704, 0.767029, 0, 43.5687, 0)
 shadow_enabled = true
 directional_shadow_max_distance = 200.0
-
-[node name="car" parent="." instance=ExtResource("1_0rw6s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.564415, 0.184314, -6.30866)
-linear_velocity = Vector3(0, 0, 2)
-engine_force_value = 200
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

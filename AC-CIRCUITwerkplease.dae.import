@@ -13,8 +13,8 @@ dest_files=["res://.godot/imported/AC-CIRCUITwerkplease.dae-7bde1c10e917748c9c8b
 
 [params]
 
-nodes/root_type=""
-nodes/root_name=""
+nodes/root_type="MeshInstance3D"
+nodes/root_name="ROOT"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true

@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://cd4musb8n7wp5"]
+[gd_scene load_steps=7 format=3 uid="uid://cd4musb8n7wp5"]
 
 [ext_resource type="PackedScene" uid="uid://ci52bv1m15cbs" path="res://cars/Doge.tscn" id="1_8xexj"]
-[ext_resource type="ArrayMesh" uid="uid://konpagaktrk0" path="res://AC-CIRCUITtextured.obj" id="2_2tsxo"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_b7tlo"]
 sky_top_color = Color(0.419608, 0.54902, 0.619608, 1)
@@ -49,7 +48,6 @@ engine_force_value = 200
 
 [node name="Ac-circuiTtextured" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.278, 0, -6.78)
-mesh = ExtResource("2_2tsxo")
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="Ac-circuiTtextured"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, 0, 0)
