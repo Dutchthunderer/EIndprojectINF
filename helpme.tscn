@@ -1,13 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://b8onlq4cfrnvx"]
 
-[ext_resource type="PackedScene" uid="uid://do0fifisci8d0" path="res://AC-CIRCUITwerkplease.dae" id="1_4cnnl"]
 [ext_resource type="PackedScene" uid="uid://ci52bv1m15cbs" path="res://cars/Doge.tscn" id="2_j23l1"]
+[ext_resource type="PackedScene" uid="uid://n68kpc0gq0pw" path="res://AC-CIRCUITwerkplease-col.dae" id="2_nosvw"]
 
 [node name="Node3D" type="Node3D"]
-
-[node name="AC-CIRCUITwerkplease" parent="." instance=ExtResource("1_4cnnl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.09129, 0, -0.0811343)
-metadata/_edit_group_ = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 90.8952, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.80696, 0.183487, -0.56138, 0, 0.950516, 0.310676, 0.590606, -0.250704, 0.767029, 0, 43.5687, 0)
@@ -18,3 +15,6 @@ directional_shadow_max_distance = 200.0
 transform = Transform3D(-0.0665351, 0, -0.997784, 0, 1, 0, 0.997784, 0, -0.0665351, -0.564415, 0.184314, -6.30866)
 linear_velocity = Vector3(0, 0, 2)
 engine_force_value = 200
+
+[node name="root" parent="." instance=ExtResource("2_nosvw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105.213, 0, 22.162)
